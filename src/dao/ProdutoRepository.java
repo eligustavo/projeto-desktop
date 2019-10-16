@@ -1,6 +1,6 @@
-package repository;
+package dao;
 
-import Connection.ConnectionFactory;
+import conexao.ConnectionFactory;
 import model.ModelProduto;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

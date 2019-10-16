@@ -5,7 +5,7 @@
  */
 package view;
 
-import repository.ProdutoRepository;
+import dao.ProdutoRepository;
 import model.ModelProduto;
 import javax.swing.JDesktopPane;
 import javax.swing.JOptionPane;

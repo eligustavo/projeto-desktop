@@ -5,7 +5,7 @@
  */
 package view;
 
-import repository.UsuarioRepository;
+import dao.UsuarioRepository;
 import javax.swing.JOptionPane;
 
 /**

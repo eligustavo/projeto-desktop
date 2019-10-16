@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package repository;
+package dao;
 
-import Connection.ConnectionFactory;
+import conexao.ConnectionFactory;
 import model.ModelUsuario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

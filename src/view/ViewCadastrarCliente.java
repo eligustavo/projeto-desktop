@@ -5,7 +5,7 @@
  */
 package view;
 
-import repository.ClienteRepository;
+import dao.ClienteRepository;
 import model.ModelCliente;
 
 /**
