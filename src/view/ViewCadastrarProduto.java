@@ -5,8 +5,8 @@
  */
 package view;
 
-import dao.ProdutoRepository;
-import model.ModelProduto;
+import dao.ProdutoDAO;
+import domain.Produto;
 
 /**
  *
@@ -139,8 +139,8 @@ public class ViewCadastrarProduto extends javax.swing.JInternalFrame {
     private void txtSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSalvarActionPerformed
         // TODO add your handling code here:
 
-        ModelProduto objProduto = new ModelProduto();
-        ProdutoRepository dao = new ProdutoRepository();
+        Produto objProduto = new Produto();
+        ProdutoDAO dao = new ProdutoDAO();
         objProduto.setNomeProduto(txtNomePro.getText());
         objProduto.setDescProduto(txtDesc.getText());
         objProduto.setValProduto(Double.parseDouble(txtVal.getText()));

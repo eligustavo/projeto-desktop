@@ -18,64 +18,63 @@ import java.util.logging.Logger;
  * @author Elivelton
  */
 public class ConnectionFactory {
-    
-    //Classe de conexão com o banco de dados
-    private static final String DRIVER = "com.mysql.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://localhost:3306/...";
-    private static final String USER = "root";
-    private static final String PASSWORD = "";
-    
+
+	// Classe de conexão com o banco de dados
+	private static final String DRIVER = "com.mysql.jdbc.Driver";
+	private static final String URL = "jdbc:mysql://localhost:3306/"; // Nome do banco de dados
+	private static final String USER = "root"; // Usuario padr�o
+	private static final String PASSWORD = ""; // Senha padr�o
+
 //Iniciada a conexão com o banco de dados
-    public static Connection getConnection() {
+	public static Connection getConnection() {
 
-        try {
-            Class.forName(DRIVER);
-            return DriverManager.getConnection(URL, USER, PASSWORD);
+		try {
+			Class.forName(DRIVER);
+			return DriverManager.getConnection(URL, USER, PASSWORD);
 //Caso ocorra algum problema, é iniciada uma excessão
-        } catch (ClassNotFoundException | SQLException ex) {
-            throw new RuntimeException("Erro na Conexão: ", ex);
-        }
-    }
+		} catch (ClassNotFoundException | SQLException ex) {
+			throw new RuntimeException("Erro na Conexão: ", ex);
+		}
+	}
 
-    
-    public static void closeConnection(Connection con) {
+	public static void closeConnection(Connection con) {
 
-        try {
-            if (con != null) {
-                con.close();
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
-        }
+		try {
+			if (con != null) {
+				con.close();
+			}
+		} catch (SQLException ex) {
+			Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
+		}
 
-    }
-    
-    public static void closeConnection(Connection con, PreparedStatement stmt) {
+	}
 
-        closeConnection(con);
-        
-        try {
-           if(stmt != null){
-               stmt.close();
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
-        }
+	public static void closeConnection(Connection con, PreparedStatement stmt) {
 
-    }
-    
-     public static void closeConnection(Connection con, PreparedStatement stmt, ResultSet rs) {
+		closeConnection(con);
 
-         closeConnection(con, stmt);
-        
-        try {
-           if(rs != null){
-               rs.close();
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
-        }
+		try {
+			if (stmt != null) {
+				stmt.close();
+			}
+		} catch (SQLException ex) {
+			Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
+		}
 
-    }
+	}
+
+	public static void closeConnection(Connection con, PreparedStatement stmt, ResultSet rs) {
+
+		closeConnection(con, stmt);
+
+		try {
+			if (rs != null) {
+				rs.close();
+			}
+		} catch (SQLException ex) {
+			Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
+		}
+
+	}
 
 }

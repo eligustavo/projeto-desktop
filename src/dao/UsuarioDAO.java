@@ -6,7 +6,8 @@
 package dao;
 
 import conexao.ConnectionFactory;
-import model.ModelUsuario;
+import domain.Usuario;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,7 +19,7 @@ import java.util.logging.Logger;
  *
  * @author Elivelton
  */
-public class UsuarioRepository {
+public class UsuarioDAO {
     
     public boolean checkLogin(String login, String senha) {
 
@@ -43,7 +44,7 @@ public class UsuarioRepository {
             }
 
         } catch (SQLException ex) {
-            Logger.getLogger(ModelUsuario.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             ConnectionFactory.closeConnection(con, stmt, rs);
         }

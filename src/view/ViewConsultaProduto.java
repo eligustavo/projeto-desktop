@@ -5,8 +5,9 @@
  */
 package view;
 
-import dao.ProdutoRepository;
-import model.ModelProduto;
+import dao.ProdutoDAO;
+import domain.Produto;
+
 import javax.swing.JDesktopPane;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -36,9 +37,9 @@ public class ViewConsultaProduto extends javax.swing.JInternalFrame {
     public void leituraTabela() {
         DefaultTableModel dtmProduto = (DefaultTableModel) tabProduto.getModel();
         dtmProduto.setNumRows(0);
-        ProdutoRepository objpDAO = new ProdutoRepository();
+        ProdutoDAO objpDAO = new ProdutoDAO();
 
-        for (ModelProduto pro : objpDAO.Leitura()) {
+        for (Produto pro : objpDAO.Leitura()) {
 
             dtmProduto.addRow(new Object[]{
                 pro.getIdProduto(),
@@ -54,9 +55,9 @@ public class ViewConsultaProduto extends javax.swing.JInternalFrame {
     public void leituraTabelaporNome(String nomeProduto) {
         DefaultTableModel dtmProduto = (DefaultTableModel) tabProduto.getModel();
         dtmProduto.setNumRows(0);
-        ProdutoRepository objpDAO = new ProdutoRepository();
+        ProdutoDAO objpDAO = new ProdutoDAO();
 
-        for (ModelProduto pro : objpDAO.Pesquisar(nomeProduto)) {
+        for (Produto pro : objpDAO.Pesquisar(nomeProduto)) {
 
             dtmProduto.addRow(new Object[]{
                 pro.getIdProduto(),
@@ -296,8 +297,8 @@ public class ViewConsultaProduto extends javax.swing.JInternalFrame {
 
         if (tabProduto.getSelectedRow() != -1) {
 
-            ModelProduto objProduto = new ModelProduto();
-            ProdutoRepository dao = new ProdutoRepository();
+            Produto objProduto = new Produto();
+            ProdutoDAO dao = new ProdutoDAO();
 
             objProduto.setIdProduto((int) tabProduto.getValueAt(tabProduto.getSelectedRow(), 0));
             dao.Excluir(objProduto);
@@ -321,8 +322,8 @@ public class ViewConsultaProduto extends javax.swing.JInternalFrame {
 
         if (tabProduto.getSelectedRow() != -1) {
 
-            ModelProduto objproduto = new ModelProduto();
-            ProdutoRepository dao = new ProdutoRepository();
+            Produto objproduto = new Produto();
+            ProdutoDAO dao = new ProdutoDAO();
             objproduto.setNomeProduto(txtNomePro.getText());
             objproduto.setDescProduto(txtDesc.getText());
             objproduto.setValProduto(Double.parseDouble(txtVal.getText()));

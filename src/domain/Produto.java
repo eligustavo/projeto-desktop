@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package domain;
 
 /**
  *
  * @author Elivelton
  */
-public class ModelProduto {
+public class Produto {
 
     private int idProduto;
     private String nomeProduto;

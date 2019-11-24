@@ -5,8 +5,9 @@
  */
 package view;
 
-import dao.ProdutoRepository;
-import model.ModelProduto;
+import dao.ProdutoDAO;
+import domain.Produto;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import javax.swing.JDesktopPane;
@@ -32,7 +33,7 @@ public class ViewVendas extends javax.swing.JInternalFrame {
         modelo.addColumn("ID");
         modelo.addColumn("Nome");
         modelo.addColumn("Quantidade");
-        modelo.addColumn("Preço");
+        modelo.addColumn("Preco");
     }
 
     /**
@@ -177,13 +178,13 @@ public class ViewVendas extends javax.swing.JInternalFrame {
 
     private void btPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPesquisarActionPerformed
         // TODO add your handling code here:
-        ProdutoRepository obj = new ProdutoRepository();
+        ProdutoDAO obj = new ProdutoDAO();
 
-        ArrayList<ModelProduto> dados = obj.retornar(Integer.parseInt(txtProduto.getText()));
+        ArrayList<Produto> dados = obj.retornar(Integer.parseInt(txtProduto.getText()));
 
         double preco = 0;
 
-        for (ModelProduto linha : dados) {
+        for (Produto linha : dados) {
             preco = linha.getValProduto();
         }
 
@@ -191,7 +192,7 @@ public class ViewVendas extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(null, "Produto não encontrado!");
         }
 
-        for (ModelProduto linha : dados) {
+        for (Produto linha : dados) {
             modelo.addRow(new Object[]{linha.getIdProduto(), linha.getNomeProduto(), 1, linha.getValProduto()});
         }
 

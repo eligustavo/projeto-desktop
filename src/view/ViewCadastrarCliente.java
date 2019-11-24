@@ -5,8 +5,8 @@
  */
 package view;
 
-import dao.ClienteRepository;
-import model.ModelCliente;
+import dao.ClienteDAO;
+import domain.Cliente;
 
 /**
  *
@@ -236,8 +236,8 @@ public class ViewCadastrarCliente extends javax.swing.JInternalFrame {
     private void txtSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSalvarActionPerformed
         // TODO add your handling code here:
 
-        ModelCliente objcliente = new ModelCliente();
-        ClienteRepository dao = new ClienteRepository();
+        Cliente objcliente = new Cliente();
+        ClienteDAO dao = new ClienteDAO();
         objcliente.setNomeCliente(txtNomeCli.getText());
         objcliente.setCpfCliente(txtCpf.getText());
         objcliente.setCpfCliente(txtCpf.getText());

@@ -5,8 +5,9 @@
  */
 package view;
 
-import dao.ClienteRepository;
-import model.ModelCliente;
+import dao.ClienteDAO;
+import domain.Cliente;
+
 import javax.swing.JDesktopPane;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -37,9 +38,9 @@ public class ViewConsultaCliente extends javax.swing.JInternalFrame {
 
         DefaultTableModel dtmCliente = (DefaultTableModel) tabCliente.getModel();
         dtmCliente.setNumRows(0);
-        ClienteRepository objCdao = new ClienteRepository();
+        ClienteDAO objCdao = new ClienteDAO();
 
-        for (ModelCliente cli : objCdao.Leitura()) {
+        for (Cliente cli : objCdao.Leitura()) {
 
             dtmCliente.addRow(new Object[]{
                 cli.getIdCliente(),
@@ -61,9 +62,9 @@ public class ViewConsultaCliente extends javax.swing.JInternalFrame {
 
         DefaultTableModel dtmCliente = (DefaultTableModel) tabCliente.getModel();
         dtmCliente.setNumRows(0);
-        ClienteRepository objCdao = new ClienteRepository();
+        ClienteDAO objCdao = new ClienteDAO();
 
-        for (ModelCliente cli : objCdao.Pesquisar(nomeCliente)) {
+        for (Cliente cli : objCdao.Pesquisar(nomeCliente)) {
 
             dtmCliente.addRow(new Object[]{
                 cli.getIdCliente(),
@@ -374,8 +375,8 @@ public class ViewConsultaCliente extends javax.swing.JInternalFrame {
 
         if (tabCliente.getSelectedRow() != -1) {
 
-            ModelCliente objcliente = new ModelCliente();
-            ClienteRepository dao = new ClienteRepository();
+            Cliente objcliente = new Cliente();
+            ClienteDAO dao = new ClienteDAO();
 
             objcliente.setIdCliente((int) tabCliente.getValueAt(tabCliente.getSelectedRow(), 0));
             dao.Excluir(objcliente);
@@ -402,8 +403,8 @@ public class ViewConsultaCliente extends javax.swing.JInternalFrame {
 
         if (tabCliente.getSelectedRow() != -1) {
 
-            ModelCliente objcliente = new ModelCliente();
-            ClienteRepository dao = new ClienteRepository();
+            Cliente objcliente = new Cliente();
+            ClienteDAO dao = new ClienteDAO();
             objcliente.setNomeCliente(txtNomeCli.getText());
             objcliente.setCpfCliente(txtCpf.getText());
             objcliente.setCpfCliente(txtCpf.getText());

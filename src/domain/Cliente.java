@@ -1,10 +1,10 @@
-package model;
+package domain;
 
 /**
  *
  * @author Elivelton
  */
-public class ModelCliente {
+public class Cliente {
 
     private int idCliente;
     private String nomeCliente;
