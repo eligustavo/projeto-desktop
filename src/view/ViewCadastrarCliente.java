@@ -5,8 +5,8 @@
  */
 package view;
 
-import dao.ClienteDAO;
-import domain.Cliente;
+import controller.ClienteDAO;
+import model.Cliente;
 
 /**
  *
@@ -236,19 +236,19 @@ public class ViewCadastrarCliente extends javax.swing.JInternalFrame {
     private void txtSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSalvarActionPerformed
         // TODO add your handling code here:
 
-        Cliente objcliente = new Cliente();
+        Cliente objCliente = new Cliente();
         ClienteDAO dao = new ClienteDAO();
-        objcliente.setNomeCliente(txtNomeCli.getText());
-        objcliente.setCpfCliente(txtCpf.getText());
-        objcliente.setCpfCliente(txtCpf.getText());
-        objcliente.setEndCliente(txtEnd.getText());
-        objcliente.setBaiCliente(txtBai.getText());
-        objcliente.setCidCliente(txtCid.getText());
-        objcliente.setUfCliente(txtUF.getSelectedItem().toString());
-        objcliente.setCepCliente(txtCep.getText());
-        objcliente.setTelCliente(txtTele.getText());
-        objcliente.setEmCliente(txtEm.getText());
-        dao.Salvar(objcliente);
+        objCliente.setNomeCliente(txtNomeCli.getText());
+        objCliente.setCpfCliente(txtCpf.getText());
+        objCliente.setCpfCliente(txtCpf.getText());
+        objCliente.setEndCliente(txtEnd.getText());
+        objCliente.setBaiCliente(txtBai.getText());
+        objCliente.setCidCliente(txtCid.getText());
+        objCliente.setUfCliente(txtUF.getSelectedItem().toString());
+        objCliente.setCepCliente(txtCep.getText());
+        objCliente.setTelCliente(txtTele.getText());
+        objCliente.setEmCliente(txtEm.getText());
+        dao.Salvar(objCliente);
 
     }//GEN-LAST:event_txtSalvarActionPerformed
 

@@ -5,7 +5,7 @@
  */
 package view;
 
-import dao.UsuarioDAO;
+import controller.UsuarioDAO;
 import javax.swing.JOptionPane;
 
 /**

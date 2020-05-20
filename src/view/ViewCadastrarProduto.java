@@ -5,8 +5,8 @@
  */
 package view;
 
-import dao.ProdutoDAO;
-import domain.Produto;
+import controller.ProdutoDAO;
+import model.Produto;
 
 /**
  *

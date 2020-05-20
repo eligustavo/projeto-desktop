@@ -1,7 +1,7 @@
-package dao;
+package controller;
 
-import conexao.ConnectionFactory;
-import domain.Produto;
+import connection.ConnectionFactory;
+import model.Produto;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

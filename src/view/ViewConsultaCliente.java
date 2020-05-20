@@ -5,8 +5,8 @@
  */
 package view;
 
-import dao.ClienteDAO;
-import domain.Cliente;
+import controller.ClienteDAO;
+import model.Cliente;
 
 import javax.swing.JDesktopPane;
 import javax.swing.JOptionPane;

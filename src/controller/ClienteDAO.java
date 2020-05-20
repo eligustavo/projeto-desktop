@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dao;
+package controller;
 
-import conexao.ConnectionFactory;
-import domain.Cliente;
+import connection.ConnectionFactory;
+import model.Cliente;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

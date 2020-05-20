@@ -5,8 +5,8 @@
  */
 package view;
 
-import dao.ProdutoDAO;
-import domain.Produto;
+import controller.ProdutoDAO;
+import model.Produto;
 
 import javax.swing.JDesktopPane;
 import javax.swing.JOptionPane;

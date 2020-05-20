@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package conexao;
+package connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -22,8 +22,8 @@ public class ConnectionFactory {
 	// Classe de conexÃ£o com o banco de dados
 	private static final String DRIVER = "com.mysql.jdbc.Driver";
 	private static final String URL = "jdbc:mysql://localhost:3306/"; // Nome do banco de dados
-	private static final String USER = "root"; // Usuario padrão
-	private static final String PASSWORD = ""; // Senha padrão
+	private static final String USER = "root"; // Usuario padrï¿½o
+	private static final String PASSWORD = ""; // Senha padrï¿½o
 
 //Iniciada a conexÃ£o com o banco de dados
 	public static Connection getConnection() {
