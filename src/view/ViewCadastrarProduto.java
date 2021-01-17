@@ -5,7 +5,7 @@
  */
 package view;
 
-import controller.ProdutoDAO;
+import controller.ProdutoController;
 import model.Produto;
 
 /**
@@ -140,7 +140,7 @@ public class ViewCadastrarProduto extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
 
         Produto objProduto = new Produto();
-        ProdutoDAO dao = new ProdutoDAO();
+        ProdutoController dao = new ProdutoController();
         objProduto.setNomeProduto(txtNomePro.getText());
         objProduto.setDescProduto(txtDesc.getText());
         objProduto.setValProduto(Double.parseDouble(txtVal.getText()));

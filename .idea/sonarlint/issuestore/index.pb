@@ -1,0 +1,19 @@
+
+U
+%src/controller/UsuarioController.java,2/b/2bc236ab0a00db1c87a114c7c7b137fa04663e2d
+U
+%src/controller/ProdutoController.java,4/a/4a04d4a6d685dc78d5aae89d2f1b969405b1a462
+F
+src/model/Cliente.java,b/0/b02b3671a8e1926f1134b6448d6f9a9d5228b3e3
+F
+src/model/Produto.java,3/a/3ab94d0254db570bca7b1e8c5b2406c9fb282fee
+F
+src/model/Usuario.java,4/f/4fc1d7fb1b616cf5c10fc9d5b5be92de1752bc41
+R
+"src/view/ViewCadastrarCliente.java,0/5/0565687fceac2333ffb9f9677d825ce94d264eb0
+U
+%src/controller/ClienteController.java,0/5/059fe216b1a1536a7f8f6506af9f7819b24adda2
+G
+src/view/ViewLogin.java,c/a/cac7a5cc24416f3ae060609ca0c18d95b11efa1c
+O
+src/view/ViewTelaPrincipal.java,c/9/c9beb21bf2b7e6526b5b53e7121c5351cf3ceeb2

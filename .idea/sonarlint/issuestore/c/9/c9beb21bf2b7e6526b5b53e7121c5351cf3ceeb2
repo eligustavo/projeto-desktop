@@ -1,0 +1,72 @@
+
+Q	java:S110"<This class has 6 parents which is greater than 5 authorized.(³Ñáó
+>
+java:S1604D"(Make this anonymous inner class a lambda(Òë«ƒ
+C
+java:S1604L"(Make this anonymous inner class a lambda(„±ÓÎùÿÿÿÿ
+=
+java:S1604W"(Make this anonymous inner class a lambda(²Âæ@
+C
+java:S1604_"(Make this anonymous inner class a lambda(Ù‡©øÿÿÿÿ
+C
+java:S1604j"(Make this anonymous inner class a lambda(Œ‘àËúÿÿÿÿ
+>
+java:S1604r"(Make this anonymous inner class a lambda(‚™£Š
+?
+java:S1604€"(Make this anonymous inner class a lambda(Î¤í
+D
+java:S1604å"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+r
+java:S1450î"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+l
+java:S1450ï"URemove the "jMenu1" field and declare it as a local variable in the relevant methods.(şÚÖ˜
+l
+java:S1450ğ"URemove the "jMenu2" field and declare it as a local variable in the relevant methods.(€˜ÇÛ
+l
+java:S1450ñ"URemove the "jMenu3" field and declare it as a local variable in the relevant methods.(ƒŞøõ
+l
+java:S1450ò"URemove the "jMenu5" field and declare it as a local variable in the relevant methods.(Ïšù¹
+t
+java:S1450ó"XRemove the "jMenuBar1" field and declare it as a local variable in the relevant methods.(úıÁ›ÿÿÿÿÿ
+o
+java:S1450ô"YRemove the "jMenuItem1" field and declare it as a local variable in the relevant methods.(Éíå4
+p
+java:S1450õ"YRemove the "jMenuItem2" field and declare it as a local variable in the relevant methods.(ßÛİ•
+p
+java:S1450ö"YRemove the "jMenuItem6" field and declare it as a local variable in the relevant methods.(ÃÁ–î
+u
+java:S1450÷"YRemove the "jMenuItem7" field and declare it as a local variable in the relevant methods.(½à®—üÿÿÿÿ
+F
+java:S1172š"*Remove this unused method parameter "evt".(ŠŒİşÿÿÿÿ
+N
+java:S1135›"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+F
+java:S1172£"*Remove this unused method parameter "evt".(ó‚Ğúÿÿÿÿ
+N
+java:S1135¤"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+F
+java:S1172§"*Remove this unused method parameter "evt".(»ç˜¼úÿÿÿÿ
+N
+java:S1135¨"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+F
+java:S1172®"*Remove this unused method parameter "evt".(áÎ¥ˆşÿÿÿÿ
+N
+java:S1135¯"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+A
+java:S1172µ"*Remove this unused method parameter "evt".(±çÇ—
+N
+java:S1135¶"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+A
+java:S1172¹"*Remove this unused method parameter "evt".(ÆÀÁ
+A
+java:S1172¿"*Remove this unused method parameter "evt".(ÖØ‡«
+N
+java:S1135À"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+T
+java:S1197Ë"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+\
+java:S2147Ú"ECombine this catch with the one at line 216, which has the same body.(¨¦Š½
+\
+java:S2147Ü"ECombine this catch with the one at line 216, which has the same body.(ã€ 
+[
+java:S2147Ş"ECombine this catch with the one at line 216, which has the same body.(ñÎ¯%

@@ -5,7 +5,7 @@
  */
 package view;
 
-import controller.ProdutoDAO;
+import controller.ProdutoController;
 import model.Produto;
 
 import java.text.DecimalFormat;
@@ -178,7 +178,7 @@ public class ViewVendas extends javax.swing.JInternalFrame {
 
     private void btPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPesquisarActionPerformed
         // TODO add your handling code here:
-        ProdutoDAO obj = new ProdutoDAO();
+        ProdutoController obj = new ProdutoController();
 
         ArrayList<Produto> dados = obj.retornar(Integer.parseInt(txtProduto.getText()));
 

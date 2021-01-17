@@ -5,7 +5,7 @@
  */
 package view;
 
-import controller.ProdutoDAO;
+import controller.ProdutoController;
 import model.Produto;
 
 import javax.swing.JDesktopPane;
@@ -37,7 +37,7 @@ public class ViewConsultaProduto extends javax.swing.JInternalFrame {
     public void leituraTabela() {
         DefaultTableModel dtmProduto = (DefaultTableModel) tabProduto.getModel();
         dtmProduto.setNumRows(0);
-        ProdutoDAO objpDAO = new ProdutoDAO();
+        ProdutoController objpDAO = new ProdutoController();
 
         for (Produto pro : objpDAO.Leitura()) {
 
@@ -55,7 +55,7 @@ public class ViewConsultaProduto extends javax.swing.JInternalFrame {
     public void leituraTabelaporNome(String nomeProduto) {
         DefaultTableModel dtmProduto = (DefaultTableModel) tabProduto.getModel();
         dtmProduto.setNumRows(0);
-        ProdutoDAO objpDAO = new ProdutoDAO();
+        ProdutoController objpDAO = new ProdutoController();
 
         for (Produto pro : objpDAO.Pesquisar(nomeProduto)) {
 
@@ -298,7 +298,7 @@ public class ViewConsultaProduto extends javax.swing.JInternalFrame {
         if (tabProduto.getSelectedRow() != -1) {
 
             Produto objProduto = new Produto();
-            ProdutoDAO dao = new ProdutoDAO();
+            ProdutoController dao = new ProdutoController();
 
             objProduto.setIdProduto((int) tabProduto.getValueAt(tabProduto.getSelectedRow(), 0));
             dao.Excluir(objProduto);
@@ -323,7 +323,7 @@ public class ViewConsultaProduto extends javax.swing.JInternalFrame {
         if (tabProduto.getSelectedRow() != -1) {
 
             Produto objproduto = new Produto();
-            ProdutoDAO dao = new ProdutoDAO();
+            ProdutoController dao = new ProdutoController();
             objproduto.setNomeProduto(txtNomePro.getText());
             objproduto.setDescProduto(txtDesc.getText());
             objproduto.setValProduto(Double.parseDouble(txtVal.getText()));

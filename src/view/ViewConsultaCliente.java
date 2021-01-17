@@ -5,7 +5,7 @@
  */
 package view;
 
-import controller.ClienteDAO;
+import controller.ClienteController;
 import model.Cliente;
 
 import javax.swing.JDesktopPane;
@@ -38,7 +38,7 @@ public class ViewConsultaCliente extends javax.swing.JInternalFrame {
 
         DefaultTableModel dtmCliente = (DefaultTableModel) tabCliente.getModel();
         dtmCliente.setNumRows(0);
-        ClienteDAO objCdao = new ClienteDAO();
+        ClienteController objCdao = new ClienteController();
 
         for (Cliente cli : objCdao.Leitura()) {
 
@@ -62,7 +62,7 @@ public class ViewConsultaCliente extends javax.swing.JInternalFrame {
 
         DefaultTableModel dtmCliente = (DefaultTableModel) tabCliente.getModel();
         dtmCliente.setNumRows(0);
-        ClienteDAO objCdao = new ClienteDAO();
+        ClienteController objCdao = new ClienteController();
 
         for (Cliente cli : objCdao.Pesquisar(nomeCliente)) {
 
@@ -376,7 +376,7 @@ public class ViewConsultaCliente extends javax.swing.JInternalFrame {
         if (tabCliente.getSelectedRow() != -1) {
 
             Cliente objcliente = new Cliente();
-            ClienteDAO dao = new ClienteDAO();
+            ClienteController dao = new ClienteController();
 
             objcliente.setIdCliente((int) tabCliente.getValueAt(tabCliente.getSelectedRow(), 0));
             dao.Excluir(objcliente);
@@ -404,7 +404,7 @@ public class ViewConsultaCliente extends javax.swing.JInternalFrame {
         if (tabCliente.getSelectedRow() != -1) {
 
             Cliente objcliente = new Cliente();
-            ClienteDAO dao = new ClienteDAO();
+            ClienteController dao = new ClienteController();
             objcliente.setNomeCliente(txtNomeCli.getText());
             objcliente.setCpfCliente(txtCpf.getText());
             objcliente.setCpfCliente(txtCpf.getText());

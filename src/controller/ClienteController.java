@@ -22,9 +22,8 @@ import javax.swing.JOptionPane;
  *
  * @author Elivelton
  */
-public class ClienteDAO {
+public class ClienteController {
 
-	//Metodo que salva um cliente dentro do banco de dados 
 	public void Salvar(Cliente c) {
 
 		Connection con = ConnectionFactory.getConnection();
@@ -57,14 +56,13 @@ public class ClienteDAO {
 
 		} catch (SQLException ex) {
 			JOptionPane.showMessageDialog(null, "Erro ao salvar!: " + ex);
-			Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(ClienteController.class.getName()).log(Level.SEVERE, null, ex);
 		} finally {
 			ConnectionFactory.closeConnection(con, stmt);
 		}
 
 	}
 
-	//Mostra uma lista de clientes cadastrados        
 	public List<Cliente> Leitura() {
 
 		Connection con = ConnectionFactory.getConnection();
@@ -97,7 +95,7 @@ public class ClienteDAO {
 
 		} catch (SQLException ex) {
 
-			Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(ClienteController.class.getName()).log(Level.SEVERE, null, ex);
 		} finally {
 			ConnectionFactory.closeConnection(con, stmt, rs);
 		}
@@ -106,7 +104,6 @@ public class ClienteDAO {
 
 	}
 
-	//Método de alterar um cliente    
 	public void Alterar(Cliente c) {
 
 		Connection con = ConnectionFactory.getConnection();
@@ -140,7 +137,7 @@ public class ClienteDAO {
 
 		} catch (SQLException ex) {
 			JOptionPane.showMessageDialog(null, "Erro ao atualizar!: " + ex);
-			Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(ClienteController.class.getName()).log(Level.SEVERE, null, ex);
 		} finally {
 			ConnectionFactory.closeConnection(con, stmt);
 		}
@@ -161,7 +158,7 @@ public class ClienteDAO {
 
 		} catch (SQLException ex) {
 			JOptionPane.showMessageDialog(null, "Erro ao atualizar!: " + ex);
-			Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(ClienteController.class.getName()).log(Level.SEVERE, null, ex);
 		} finally {
 			ConnectionFactory.closeConnection(con, stmt);
 		}
@@ -202,7 +199,7 @@ public class ClienteDAO {
 
 		} catch (SQLException ex) {
 
-			Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
+			Logger.getLogger(ClienteController.class.getName()).log(Level.SEVERE, null, ex);
 		} finally {
 			ConnectionFactory.closeConnection(con, stmt, rs);
 		}

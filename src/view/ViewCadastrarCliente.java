@@ -5,7 +5,7 @@
  */
 package view;
 
-import controller.ClienteDAO;
+import controller.ClienteController;
 import model.Cliente;
 
 /**
@@ -237,7 +237,7 @@ public class ViewCadastrarCliente extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
 
         Cliente objCliente = new Cliente();
-        ClienteDAO dao = new ClienteDAO();
+        ClienteController dao = new ClienteController();
         objCliente.setNomeCliente(txtNomeCli.getText());
         objCliente.setCpfCliente(txtCpf.getText());
         objCliente.setCpfCliente(txtCpf.getText());

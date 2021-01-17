@@ -1,0 +1,18 @@
+
+a
+java:S1192E"KDefine a constant instead of duplicating this literal "valProduto" 3 times.(óàğÍ
+b	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Ìñ
+c	java:S100t"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÖ
+b
+java:S1192C"LDefine a constant instead of duplicating this literal "nomeProduto" 3 times.(Ùô¦§
+Œ
+java:S1319¥"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ğÎ¦ÿÿÿÿÿ
+i	java:S100†"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûæä“úÿÿÿÿ
+h	java:S1003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Ç¸ıÿÿÿÿ
+h	java:S100U"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÁÌÂúÿÿÿÿ
+b
+java:S1192D"LDefine a constant instead of duplicating this literal "descProduto" 3 times.(Ï·º
+e
+java:S1192B"JDefine a constant instead of duplicating this literal "idProduto" 3 times.(õÓúºüÿÿÿÿ
+g
+java:S1192F"LDefine a constant instead of duplicating this literal "estoProduto" 3 times.(¸Å‚ÿÿÿÿÿ

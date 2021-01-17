@@ -1,0 +1,54 @@
+
+a
+java:S11921"FDefine a constant instead of duplicating this literal "Arial" 3 times.(Å§™üÿÿÿÿ
+Q	java:S110"<This class has 6 parents which is greater than 5 authorized.(Ñúãò
+C
+java:S16047"(Make this anonymous inner class a lambda(Ä‡öîşÿÿÿÿ
+>
+java:S1604@"(Make this anonymous inner class a lambda(Çñ¸‰
+D
+java:S1604À"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+p
+java:S1450È"TRemove the "Login" field and declare it as a local variable in the relevant methods.(¸ÖöÄşÿÿÿÿ
+p
+java:S1450É"TRemove the "Senha" field and declare it as a local variable in the relevant methods.(âï“šşÿÿÿÿ
+r
+java:S1450Ê"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
+r
+java:S1450Ë"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ
+m
+java:S1450Ì"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã
+r
+java:S1450Í"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ
+n
+java:S1450Î"WRemove the "txtLogar" field and declare it as a local variable in the relevant methods.(ÊÁİà
+k	java:S116È"PRename this field "Login" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ÖöÄşÿÿÿÿ
+k	java:S116É"PRename this field "Senha" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âï“šşÿÿÿÿ
+U
+java:S1161F":Add the "@Override" annotation above this method signature(óÚ°ùÿÿÿÿ
+A
+java:S1172Œ"*Remove this unused method parameter "evt".(ûæ®Š
+V
+java:S1854":Remove this useless assignment to local variable "objUsu".(÷öÑÑşÿÿÿÿ
+N
+java:S1135"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+K
+java:S1874‘"/Remove this use of "getText"; it is deprecated.(·ƒ­÷ÿÿÿÿÿ
+A
+java:S1172š"*Remove this unused method parameter "evt".(²õÿ
+N
+java:S1135›"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+F
+java:S1172"*Remove this unused method parameter "evt".(ù…¦´ùÿÿÿÿ
+N
+java:S1135Ÿ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+T
+java:S1197¦"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+\
+java:S2147µ"ECombine this catch with the one at line 179, which has the same body.(¨¦Š½
+\
+java:S2147·"ECombine this catch with the one at line 179, which has the same body.(ã€ 
+[
+java:S2147¹"ECombine this catch with the one at line 179, which has the same body.(ñÎ¯%
+G
+java:S1481"+Remove this unused "objUsu" local variable.(÷öÑÑşÿÿÿÿ

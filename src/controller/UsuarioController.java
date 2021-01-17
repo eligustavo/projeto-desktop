@@ -16,11 +16,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
  * @author Elivelton
  */
-public class UsuarioDAO {
-    
+public class UsuarioController {
     public boolean checkLogin(String login, String senha) {
 
         Connection con = ConnectionFactory.getConnection();
@@ -30,27 +28,20 @@ public class UsuarioDAO {
         boolean check = false;
 
         try {
-
             stmt = con.prepareStatement("SELECT * FROM tbl_usuario WHERE login = ? and senha = ?");
             stmt.setString(1, login);
             stmt.setString(2, senha);
-
             rs = stmt.executeQuery();
 
             if (rs.next()) {
-
-                
                 check = true;
             }
-
         } catch (SQLException ex) {
             Logger.getLogger(Usuario.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             ConnectionFactory.closeConnection(con, stmt, rs);
         }
-
         return check;
-
     }
-    
+
 }

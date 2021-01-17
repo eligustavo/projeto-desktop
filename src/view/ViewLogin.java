@@ -5,7 +5,7 @@
  */
 package view;
 
-import controller.UsuarioDAO;
+import controller.UsuarioController;
 import javax.swing.JOptionPane;
 
 /**
@@ -140,7 +140,7 @@ public class ViewLogin extends javax.swing.JFrame {
     private void txtLogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLogarActionPerformed
         // TODO add your handling code here:
 
-        UsuarioDAO objUsu = new UsuarioDAO();
+        UsuarioController objUsu = new UsuarioController();
 
         if (txtLogin.getText().equals("usuario") && txtSenha.getText().equals("1234")) {
             JOptionPane.showMessageDialog(null, "Logado com sucesso!");
